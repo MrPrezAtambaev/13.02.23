@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Card, Button } from "react-bootstrap";
+import Like from "../Like/Like";
 
 const PostCard = ({ item, getOnePost, deletePost }) => {
   const [like, setLike] = useState(false);
@@ -19,7 +20,7 @@ const PostCard = ({ item, getOnePost, deletePost }) => {
           <Button variant="outline-dark" onClick={() => getOnePost(item.id)}>
             Edit
           </Button>
-          <h5 onClick={() => setLike(!like)}>{like ? "❤️" : "🤍"}</h5>
+          <Like />
         </div>
       </Card.Body>
     </Card>

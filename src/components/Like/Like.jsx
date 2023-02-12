@@ -1,17 +1,14 @@
 import React, { useState } from "react";
 
-
 const Like = () => {
-    // let like = false;
-    const [like, setLike] = useState(false);
+  // let like = false;
+  const [like, setLike] = useState(false);
 
-    return (
-        <>
-            <h2 onClick={() => setLike(!like)}>
-                Like: {like ? '❤️' : '🤍'}
-            </h2>
-        </>
-    )
+  return (
+    <>
+      <h5 onClick={() => setLike(!like)}>{like ? "❤️" : "🤍"}</h5>
+    </>
+  );
 };
 
 export default Like;
